@@ -25,7 +25,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Windows 64-bit
         path: dist/packwiz_windows_amd64_v1/
@@ -37,13 +37,13 @@ jobs:
 #        path: dist/packwiz_windows_386/
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Windows 64-bit ARM
         path: dist/packwiz_windows_arm64/
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Linux 64-bit x86
         path: dist/packwiz_linux_amd64_v1/
@@ -55,19 +55,19 @@ jobs:
 #        path: dist/packwiz_linux_386/
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Linux 64-bit ARM
         path: dist/packwiz_linux_arm64/
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: macOS 64-bit x86
         path: dist/packwiz_darwin_amd64_v1/
 
     - name: Upload assets
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: macOS 64-bit ARM
         path: dist/packwiz_darwin_arm64/
